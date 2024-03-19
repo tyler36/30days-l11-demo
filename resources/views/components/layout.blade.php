@@ -38,9 +38,9 @@
                                     :active="request()->is('contact')"
                                 >Contact</x-nav-link>
                                 <x-nav-link
-                                    href="/about"
-                                    :active="request()->is('about')"
-                                >About</x-nav-link>
+                                    href="/jobs"
+                                    :active="request()->is('jobs')"
+                                >Jobs</x-nav-link>
                             </div>
                         </div>
                     </div>
@@ -148,13 +148,13 @@
                         aria-current="page"
                     >Home</a>
                     <a
+                        href="/jobs"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                    >Jobs</a>
+                    <a
                         href="/contact"
                         class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
                     >Contact</a>
-                    <a
-                        href="/about"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-                    >About</a>
                 </div>
                 <div class="border-t border-gray-700 pb-3 pt-4">
                     <div class="flex items-center px-5">
