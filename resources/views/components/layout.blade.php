@@ -17,18 +17,18 @@
 <body class="h-full">
     <div class="min-h-full">
         <nav class="bg-gray-800">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="flex h-16 items-center justify-between">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <img
-                                class="h-8 w-8"
+                                class="w-8 h-8"
                                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                 alt="Your Company"
                             >
                         </div>
                         <div class="hidden md:block">
-                            <div class="ml-10 flex items-baseline space-x-4">
+                            <div class="flex items-baseline ml-10 space-x-4">
                                 <x-nav-link
                                     href="/"
                                     :active="request()->is('/')"
@@ -45,15 +45,15 @@
                         </div>
                     </div>
                     <div class="hidden md:block">
-                        <div class="ml-4 flex items-center md:ml-6">
+                        <div class="flex items-center ml-4 md:ml-6">
                             <button
                                 type="button"
-                                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                class="relative p-1 text-gray-400 bg-gray-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                             >
                                 <span class="absolute -inset-1.5"></span>
                                 <span class="sr-only">View notifications</span>
                                 <svg
-                                    class="h-6 w-6"
+                                    class="w-6 h-6"
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
@@ -73,7 +73,7 @@
                                 <div>
                                     <button
                                         type="button"
-                                        class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                        class="relative flex items-center max-w-xs text-sm bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                         id="user-menu-button"
                                         aria-expanded="false"
                                         aria-haspopup="true"
@@ -81,7 +81,7 @@
                                         <span class="absolute -inset-1.5"></span>
                                         <span class="sr-only">Open user menu</span>
                                         <img
-                                            class="h-8 w-8 rounded-full"
+                                            class="w-8 h-8 rounded-full"
                                             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                             alt=""
                                         >
@@ -90,11 +90,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="-mr-2 flex md:hidden">
+                    <div class="flex -mr-2 md:hidden">
                         <!-- Mobile menu button -->
                         <button
                             type="button"
-                            class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                            class="relative inline-flex items-center justify-center p-2 text-gray-400 bg-gray-800 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                             aria-controls="mobile-menu"
                             aria-expanded="false"
                         >
@@ -102,7 +102,7 @@
                             <span class="sr-only">Open main menu</span>
                             <!-- Menu open: "hidden", Menu closed: "block" -->
                             <svg
-                                class="block h-6 w-6"
+                                class="block w-6 h-6"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke-width="1.5"
@@ -117,7 +117,7 @@
                             </svg>
                             <!-- Menu open: "block", Menu closed: "hidden" -->
                             <svg
-                                class="hidden h-6 w-6"
+                                class="hidden w-6 h-6"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke-width="1.5"
@@ -140,27 +140,27 @@
                 class="md:hidden"
                 id="mobile-menu"
             >
-                <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <a
                         href="/"
-                        class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                        class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
                         aria-current="page"
                     >Home</a>
                     <a
                         href="/jobs"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                        class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
                     >Jobs</a>
                     <a
                         href="/contact"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                        class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
                     >Contact</a>
                 </div>
-                <div class="border-t border-gray-700 pb-3 pt-4">
+                <div class="pt-4 pb-3 border-t border-gray-700">
                     <div class="flex items-center px-5">
                         <div class="flex-shrink-0">
                             <img
-                                class="h-10 w-10 rounded-full"
+                                class="w-10 h-10 rounded-full"
                                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                 alt=""
                             >
@@ -171,12 +171,12 @@
                         </div>
                         <button
                             type="button"
-                            class="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                            class="relative flex-shrink-0 p-1 ml-auto text-gray-400 bg-gray-800 rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                         >
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">View notifications</span>
                             <svg
-                                class="h-6 w-6"
+                                class="w-6 h-6"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke-width="1.5"
@@ -196,12 +196,13 @@
         </nav>
 
         <header class="bg-white shadow">
-            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8 sm:flex sm:justify-between">
                 <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $heading }}</h1>
+                <x-button href="/jobs/create">Create Job</x-button>
             </div>
         </header>
         <main>
-            <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+            <div class="py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 {{ $slot }}
             </div>
         </main>
