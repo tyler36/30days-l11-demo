@@ -16,6 +16,7 @@
                                 name="email"
                                 id="email"
                                 type="email"
+                                :value="old('email')"
                                 required
                             />
                             <x-form-error name="email" />
